@@ -1,0 +1,29 @@
+{
+    "conversas": [
+        {
+            "mensagens": ["quais as novidades?", "notícias", "novas notícias"],
+            "resposta": "noticias"
+        },
+        {
+            "mensagens": ["novos comunicados", "quais são os comunicados?", "ver comunicados"],
+            "resposta": "comunicados"
+        },
+        {
+            "mensagens": ["editais", "ver editais", "quais são os editais", "listar editais"],
+            "resposta": "editais"
+        },
+        {
+            "mensagens": ["pesquisar notícia"],
+            "resposta": "pesquisar"
+        },
+        {
+            "mensagens": ["está onlie?", "verificar portal", "portal ativo?"],
+            "resposta": "verificar_portal"
+        },
+        {
+            "mensagens": ["contato", "entrar em contato"],
+            "resposta": "contato"
+        }
+
+    ]
+}
