@@ -1,21 +1,20 @@
 import requests
 from bs4 import BeautifulSoup
 
-
-host='https://portal.ifba.edu.br'
+host = 'https://portal.ifba.edu.br'
 url_news = '/conquista/noticias-2/noticias-campus-vitoria-da-conquista'
-search_url='/@@busca?SearchableText='
+search_url = '/@@busca?SearchableText='
 
 
-
-def get_last_posts():
+def get_last_posts() -> list:
     page_url = f'{host}{url_news}?b_start:int=0'
     page = requests.get(page_url, verify=False)
     soup = BeautifulSoup(page.text, 'html.parser').find_all(
         'article', class_='entry')
     return format_posts(soup)
 
-def format_posts(soup):
+
+def format_posts(soup) -> list:
     articles = []
     for article in soup:
         summary = article.header.find(class_='summary')
@@ -26,7 +25,6 @@ def format_posts(soup):
         }
         articles.append(article)
     return articles
-
 
 
 def __get_dat_publish(articles):
@@ -53,4 +51,3 @@ def format_results(soup):
         }
         articles.append(article)
     return articles
-

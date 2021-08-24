@@ -1,28 +1,32 @@
 {
     "conversas": [
         {
-            "mensagens": ["quais as novidades?", "notícias", "novas notícias"],
+            "mensagens": ["Quais as notícias recentes?"],
             "resposta": "noticias"
         },
         {
-            "mensagens": ["novos comunicados", "quais são os comunicados?", "ver comunicados"],
+            "mensagens": ["Quais são as notícias da categoria "],
+            "resposta": "noticia_categorias"
+        },
+        {
+            "mensagens": ["Quais as notícias sobre "],
+            "resposta": "search"
+        },
+        {
+            "mensagens": ["Quais os comunicados recentes?"],
             "resposta": "comunicados"
         },
         {
-            "mensagens": ["editais", "ver editais", "quais são os editais", "listar editais"],
+            "mensagens": ["Qual a forma de contato?"],
+            "resposta": "contato"
+        },
+        {
+            "mensagens": ["Quais os editais recentes?"],
             "resposta": "editais"
         },
         {
-            "mensagens": ["pesquisar notícia"],
-            "resposta": "pesquisar"
-        },
-        {
-            "mensagens": ["está onlie?", "verificar portal", "portal ativo?"],
-            "resposta": "verificar_portal"
-        },
-        {
-            "mensagens": ["contato", "entrar em contato"],
-            "resposta": "contato"
+            "mensagens": ["O site está online?"],
+            "resposta": "online"
         }
 
     ]
